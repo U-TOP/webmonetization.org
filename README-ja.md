@@ -1,21 +1,18 @@
-*Read this in other languages: [日本語](README-ja.md).*
-
 # WebMonetization.org
 
-[View live site](https://webmonetization.org)
+[ウェブサイトを見る](https://webmonetization.org)
 
-This repo is the home of the proposed Web Monetization standard.
+このレポジトリはウェブマネタイゼーション標準案のベースになります。
 
-View the [explainer](https://webmonetization.org/docs/explainer.html), or read
-the proposed [spec](https://webmonetization.org/specification.html).
+[エクスプレイナー](https://webmonetization.org/docs/explainer.html)を見る, もしくは、 [仕様](https://webmonetization.org/specification.html)を読む。
 
-## Contribute
+## コントリビュート
 
-This website was created with [Docusaurus](https://docusaurus.io/).
+このサイトは、[Docusaurus](https://docusaurus.io/)を使って構築されています。
 
-### Local Development
+### ローカル環境での開発
 
-1. Make sure all the dependencies for the website are installed:
+1. ウェブサイトの依存関係が全てインストールされていることを確認してください:
 
 ```sh
 # Install dependencies
@@ -23,16 +20,16 @@ $ cd website
 $ yarn
 ```
 
-2. Run your dev server:
+2. 開発用サーバーを起動します:
 
 ```sh
 # Start the site
 $ yarn start
 ```
 
-### Directory Structure
+### ディレクトリのストラクチャ
 
-Your project file structure should look something like this
+プロジェクトファイルのストラクチャは下のようにしてください:
 
 ```
 webmonetization.org
@@ -84,11 +81,11 @@ webmonetization.org
     └── yarn.lock
 ```
 
-## Editing Content
+## コンテンツの編集
 
-### Editing an existing docs page
+### 既存のドキュメントページの編集
 
-Edit docs by navigating to `docs/` and editing the corresponding document:
+`docs/`に移動し、対応するドキュメントを編集します:
 
 `docs/doc-to-be-edited.md`
 
@@ -101,15 +98,15 @@ title: This Doc Needs To Be Edited
 Edit me...
 ```
 
-For more information about docs, click
-[here](https://docusaurus.io/docs/en/navigation)
+さらに詳しくは、
+[こちら](https://docusaurus.io/docs/en/navigation)
 
-## Adding Content
+## コンテンツの追加
 
-### Adding a new docs page to an existing sidebar
+### 既存のサイドバーに新しいドキュメントを追加する
 
-1. Create the doc as a new markdown file in `/docs`, example
-   `docs/newly-created-doc.md`:
+1. `/docs`に、新しいマークダウンのドキュメントを作成します。例えば
+   `docs/newly-created-doc.md`です:
 
 ```md
 ---
@@ -120,7 +117,7 @@ title: This Doc Needs To Be Edited
 My new content here..
 ```
 
-1. Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+1. `website/sidebar.json`の既存のサイドバーでドキュメントIDを参照します:
 
 ```javascript
 // Add newly-created-doc to the Getting Started category of docs
@@ -136,13 +133,12 @@ My new content here..
 }
 ```
 
-For more information about adding new docs, click
-[here](https://docusaurus.io/docs/en/navigation)
+新しいドキュメントの追加に関して、さらに詳しくは
+[こちら](https://docusaurus.io/docs/en/navigation)
 
-### Adding items to your site's top navigation bar
+###サイトのトップナビゲーションバーにアイテムを追加する
 
-1. Add links to docs, custom pages or external links by editing the headerLinks
-   field of `website/siteConfig.js`:
+1. `website/siteConfig.js`のヘッダーリンクを編集して、ドキュメント、カスタムページおよび外部リンクにリンクを追加します:
 
 `website/siteConfig.js`
 
@@ -162,15 +158,15 @@ For more information about adding new docs, click
 }
 ```
 
-For more information about the navigation bar, click
-[here](https://docusaurus.io/docs/en/navigation)
+ナビゲーションバーに関して、さらに詳しくは
+[こちら](https://docusaurus.io/docs/en/navigation)
 
-### Adding custom pages
+### カスタムページを追加する
 
-1. Docusaurus uses React components to build pages. The components are saved as
+1. DocusaurusはReactコンポーネントを使用してページを構築します。 コンポーネントは次の名前で保存されます
    .js files in `website/pages/en`:
-1. If you want your page to show up in your navigation header, you will need to
-   update `website/siteConfig.js` to add to the `headerLinks` element:
+1. ナビゲーションヘッダーにページを表示するには、
+   `website/siteConfig.js` をアップデートして `headerLinks` 要素に追加する必要があります:
 
 `website/siteConfig.js`
 
@@ -185,9 +181,9 @@ For more information about the navigation bar, click
 }
 ```
 
-For more information about custom pages, click
-[here](https://docusaurus.io/docs/en/custom-pages).
+カスタムページに関して詳しくは、
+[こちら](https://docusaurus.io/docs/en/custom-pages).
 
-## Full Documentation
+## 完全なドキュメント
 
-Full documentation can be found on the [website](https://docusaurus.io/).
+完全なドキュメントは [website](https://docusaurus.io/) を参照してください。
